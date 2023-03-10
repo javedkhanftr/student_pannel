@@ -264,6 +264,57 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="flaticon-couple"></i><span>Parents</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="{{url('admin/parents/all-parents')}}" class="nav-link"><i
+                                            class="fa fa-angle-right"></i>Add
+                                        Parents</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{url('admin/parents/admit-form')}}" class="nav-link"><i
+                                            class="fa fa-angle-right"></i>Parents Form</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="flaticon-technological"></i><span>Acconunt</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="{{url('admin/account/all-expense')}}" class="nav-link"><i
+                                            class="fa fa-angle-right"></i>Expenses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{url('admin/account/add-expense')}}" class="nav-link"><i
+                                            class="fa fa-angle-right"></i>Add
+                                        Expenses</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{url('admin/attendence/student-attendence')}}" class="nav-link "><i
+                                    class="flaticon-checklist"></i><span>Attendence</span></a>
+                        </li>
+
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="{{url('admin/notice/admit-form')}}" class="nav-link"><i
+                                    class="flaticon-script"></i><span>Noctice</span></a>
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i
+                                    class="flaticon-maths-class-materials-cross-of-a-pencil-and-a-ruler"></i><span>Class</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="{{url('admin/class/all-class')}}" class="nav-link"><i
+                                            class="fa fa-angle-right"></i>All Classes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{url('admin/class/admit-form')}}" class="nav-link"><i
+                                            class="fa fa-angle-right"></i> Add New Class</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -298,8 +349,5 @@
     <script src="{{asset('admin/js/main.js')}}"></script>
 
 </body>
-
-
-<!-- Mirrored from www.radiustheme.com/demo/html/psdboss/akkhor/akkhor/{{url('/')}} by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Mar 2023 14:30:50 GMT -->
 
 </html>

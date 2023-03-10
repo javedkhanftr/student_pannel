@@ -19,85 +19,102 @@
             </div>
         </div>
         <div class="single-info-details">
-            <div class="item-img">
-                <img src="{{asset('uplodes/'.$data->image)}}" alt="student">
+            <div class="item-img mt-5">
+                <img width="100px" class="mt-5" src="{{asset('uplodes/'.$data->image)}}" alt="student">
             </div>
-            
+
             <div class="item-content">
                 <div class="header-inline item-header">
                     <h3 class="text-dark-medium font-medium">{{$data->name}}</h3>
                     <div class="header-elements">
                         <ul>
-                            <li><a href="#"><i class="far fa-edit"></i></a></li>
-                            <li><a href="#"><i class="fa fa-print"></i></a></li>
                             <li><a href="#"><i class="fa fa-download"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="info-table table-responsive">
-                    <table class="table text-nowrap">
-                        <tbody>
-                            <tr>
-                                <td>Name:</td>
-                                <td class="font-medium text-dark-medium">Jessia Rose</td>
-                            </tr>
-                            <tr>
-                                <td>Gender:</td>
-                                <td class="font-medium text-dark-medium">Female</td>
-                            </tr>
-                            <tr>
-                                <td>Father Name:</td>
-                                <td class="font-medium text-dark-medium">Steve Jones</td>
-                            </tr>
-                            <tr>
-                                <td>Mother Name:</td>
-                                <td class="font-medium text-dark-medium">Naomi Rose</td>
-                            </tr>
-                            <tr>
-                                <td>Date Of Birth:</td>
-                                <td class="font-medium text-dark-medium">07.08.2016</td>
-                            </tr>
-                            <tr>
-                                <td>Religion:</td>
-                                <td class="font-medium text-dark-medium">Islam</td>
-                            </tr>
-                            <tr>
-                                <td>Father Occupation:</td>
-                                <td class="font-medium text-dark-medium">Graphic Designer</td>
-                            </tr>
-                            <tr>
-                                <td>E-mail:</td>
-                                <td class="font-medium text-dark-medium">jessiarose@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td>Admission Date:</td>
-                                <td class="font-medium text-dark-medium">07.08.2019</td>
-                            </tr>
-                            <tr>
-                                <td>Class:</td>
-                                <td class="font-medium text-dark-medium">2</td>
-                            </tr>
-                            <tr>
-                                <td>Section:</td>
-                                <td class="font-medium text-dark-medium">Pink</td>
-                            </tr>
-                            <tr>
-                                <td>Roll:</td>
-                                <td class="font-medium text-dark-medium">10005</td>
-                            </tr>
-                            <tr>
-                                <td>Address:</td>
-                                <td class="font-medium text-dark-medium">House #10, Road #6, Australia</td>
-                            </tr>
-                            <tr>
-                                <td>Phone:</td>
-                                <td class="font-medium text-dark-medium">+ 88 98568888418</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="info-table table-responsive">
+                            <table class="table text-nowrap">
+                                <tbody>
+                                    <tr>
+                                        <td>Name:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->name}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->email}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->phone_number}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date Of Birth:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->dob}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Admission Date:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->joining_date}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Course:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->course}}</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info-table table-responsive">
+                            <table class="table text-nowrap">
+                                <tbody>
+                                    <tr>
+                                        <td>Qualification:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->qualification}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aadhar Number:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->aadhar_number}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Father Name:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->father_name}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Father Number:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->father_number}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Current Address:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->current_address}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Parmanent Address:</td>
+                                        <td class="font-medium text-dark-medium">{{$data->permanent_address}}</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <img width="100%" src="{{asset('uplodes/'.$data->aadhar_img)}}" alt="" srcset="">
+                    </div>
+                    <div class="col-lg-2">
+                        <img width="100%" src="{{asset('uplodes/'.$data->aadhar_back_img)}}" alt="" srcset="">
+                    </div>
                 </div>
+
             </div>
+
         </div>
+
     </div>
 </div>
 @endsection

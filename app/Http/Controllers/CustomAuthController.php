@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Hash;
 use Session;
 use App\Models\User;
+use App\Models\Notice;
 use Illuminate\Support\Facades\Auth;
 
 class CustomAuthController extends Controller
@@ -64,7 +65,9 @@ class CustomAuthController extends Controller
     public function dashboard()
  {
         if ( Auth::check() ) {
-            return view( 'admin/welcome' );
+
+            $data = Notice::all();
+            return view( 'admin/welcome', compact( 'data' ) );
         }
 
         return redirect( 'admin/login' )->withSuccess( 'You are not allowed to access' );
